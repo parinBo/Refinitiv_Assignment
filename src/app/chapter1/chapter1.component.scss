@@ -1,0 +1,24 @@
+.main{
+  display: flex;
+  flex-direction: row;
+}
+ .main > .left {
+   width: 100%;
+   max-width:200px;
+ }
+
+ .main > .right {
+  width: 100%;
+  max-width:300px;
+}
+
+.main > .center  {
+  flex-grow: 1;
+}
+@media only screen and (max-width: 600px) {
+  .main > .center {
+    width: 100%;
+    max-width: 100px;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="left">
+    <input type="text" (change)="input($event)" [(ngModel)]="num">
+  </div>
+  <div class="center">
+    <select name="" id=""  (change)="select($event)" [(ngModel)]="sel">
+      <option *ngFor="let i of list" [value]="i.a">{{i.t}}</option>
+    </select>
+  </div>
+  <div class="right">
+    <h1>{{result}}</h1>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<input type="text" name="" id="" (keyup)="dataInput($event)">
+<table>
+ <thead>
+  <th>
+    data
+  </th>
+ </thead>
+  <tbody>
+    <ng-container  *ngFor="let item of data">
+      <tr>
+        <td>
+          {{item}}
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
